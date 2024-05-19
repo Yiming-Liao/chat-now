@@ -3,7 +3,7 @@ import { socket } from "./socket/socket"
 import { UserRound } from 'lucide-react';
 import { MessagesSquare } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { SquareArrowOutUpRight } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 const App = () => {
   const [userCount, setUserCount] = useState(0);
@@ -86,11 +86,14 @@ const App = () => {
 
           {/* 我的連結 */}
           <a
-            href="https://yiming-liao.github.io/" target="_blank" rel="noreferrer noopener"
+            href="https://www.linkedin.com/in/yiming-liao" target="_blank" rel="noreferrer noopener"
             className="self-center absolute bottom-6 text-slate-400 flex gap-1"
           >
-            <SquareArrowOutUpRight className="w-5 h-5 self-center" />
-            Yiming Liao
+            {/* <Blocks className="w-5 h-5 self-center" /> */}
+            <div>
+              Yiming Liao
+            </div>
+            <Linkedin className="scale-75" />
           </a>
 
         </div>
